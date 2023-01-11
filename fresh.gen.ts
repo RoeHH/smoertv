@@ -8,15 +8,15 @@ import * as $1 from "./routes/trigger/[name].ts";
 import * as $$0 from "./islands/GridButton.tsx";
 
 const manifest = {
-  routes: {
-    "./routes/index.tsx": $0,
-    "./routes/trigger/[name].ts": $1,
-  },
-  islands: {
-    "./islands/GridButton.tsx": $$0,
-  },
-  baseUrl: import.meta.url,
-  config,
+    routes: {
+        "./routes/index.tsx": $0,
+        "./routes/trigger/[name].ts": $1,
+    },
+    islands: {
+        "./islands/GridButton.tsx": $$0,
+    },
+    baseUrl: import.meta.url,
+    config,
 };
 
 export default manifest;
