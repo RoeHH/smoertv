@@ -1,7 +1,8 @@
+import { device } from "device";
+
 export type { Command } from "./types/command.ts";
 export type { CommandGroup } from "./types/commandGroup.ts";
 export type { Device } from "./types/device.ts";
+export type { CommandController } from "./types/commandController.ts";
 
-import { parse } from "https://deno.land/std@0.168.0/flags/mod.ts";
-export const flags = parse(Deno.args, {string: ["device"]});
-export const commandController = await import(`commands/${flags.device}/commandController.ts`);
+export const commandController = await import(`commands/${device}/commandController.ts`);

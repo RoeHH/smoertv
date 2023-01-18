@@ -11,6 +11,9 @@
     "commands": "./commands/mod.ts",
     "commands/": "./commands/",
     "utils/": "./utils/",
-    "litebot": "https://deno.land/x/litebot@v0.4.4/mod.ts"
+    "litebot": "https://deno.land/x/litebot@v0.4.4/mod.ts",
+    "flags": "https://deno.land/std@0.168.0/flags/mod.ts",
+    "device": "./device.ts",
+    "local_ip": "https://deno.land/x/local_ip@0.0.3/mod.ts"
   }
 }

@@ -3,16 +3,26 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" };
-import * as $0 from "./routes/index.tsx";
-import * as $1 from "./routes/register.ts";
-import * as $2 from "./routes/trigger/[name].ts";
+import * as $0 from "./routes/_middleware.ts";
+import * as $1 from "./routes/device/commands.ts";
+import * as $2 from "./routes/device/index.ts";
+import * as $3 from "./routes/device/register.ts";
+import * as $4 from "./routes/index.tsx";
+import * as $5 from "./routes/oauth2/callback.ts";
+import * as $6 from "./routes/register.ts";
+import * as $7 from "./routes/trigger/[name].ts";
 import * as $$0 from "./islands/GridButton.tsx";
 
 const manifest = {
     routes: {
-        "./routes/index.tsx": $0,
-        "./routes/register.ts": $1,
-        "./routes/trigger/[name].ts": $2,
+        "./routes/_middleware.ts": $0,
+        "./routes/device/commands.ts": $1,
+        "./routes/device/index.ts": $2,
+        "./routes/device/register.ts": $3,
+        "./routes/index.tsx": $4,
+        "./routes/oauth2/callback.ts": $5,
+        "./routes/register.ts": $6,
+        "./routes/trigger/[name].ts": $7,
     },
     islands: {
         "./islands/GridButton.tsx": $$0,

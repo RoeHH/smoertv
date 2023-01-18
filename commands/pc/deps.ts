@@ -1,3 +1,3 @@
-import { flags } from "commands/mod.ts";
+import { device } from "device";
 
-export const litebot = flags.device === "pc" ? {} as any : await import("litebot");
+export const litebot = device === "pc" ? await import("litebot") : {} as any;
