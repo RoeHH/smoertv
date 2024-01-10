@@ -1,7 +1,6 @@
 import { Command, CommandGroup } from "commands";
 import { defaultCommands } from "./default.ts";
 import * as commandGroups from "./groups/mod.ts";
-import { litebot } from "./deps.ts";
 
 class CommandController {
     private defaultCommands: Command[] = [];
@@ -13,7 +12,7 @@ class CommandController {
 
     constructor() {
         this.defaultCommands.push(...defaultCommands);
-        this.commandGroups = [ commandGroups.netflix, commandGroups.disney ];
+        this.commandGroups = [ commandGroups.mystrom ];
     }
 
     public getCommands(): Command[] {
@@ -42,8 +41,6 @@ class CommandController {
         console.log(this.tab);
         this.tab = this.tab + 1 >= this.commandGroups.length ? 0 : this.tab + 1;
         this.switchGroup();
-        litebot.setMousePos(150 + 194 * this.tab, 15);
-        litebot.mouseClick();
     }
 
     public registerDevice(newGroup: CommandGroup): void {

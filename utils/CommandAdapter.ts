@@ -3,6 +3,8 @@ import { GridButtonProps } from "../islands/GridButton.tsx";
 
 export const commandToGridButtonProps = (command: Command): GridButtonProps => {
     return {
+        fetchUrl: command.fetch,
+        redirect: command.redirect,
         name: command.name,
         icon: command.style.icon,
         height: command.style.height,

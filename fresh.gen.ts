@@ -7,10 +7,11 @@ import * as $0 from "./routes/_middleware.ts";
 import * as $1 from "./routes/device/commands.ts";
 import * as $2 from "./routes/device/index.ts";
 import * as $3 from "./routes/device/register.ts";
-import * as $4 from "./routes/index.tsx";
-import * as $5 from "./routes/oauth2/callback.ts";
-import * as $6 from "./routes/register.ts";
-import * as $7 from "./routes/trigger/[name].ts";
+import * as $4 from "./routes/icons/temperature.svg.ts";
+import * as $5 from "./routes/index.tsx";
+import * as $6 from "./routes/oauth2/callback.ts";
+import * as $7 from "./routes/register.ts";
+import * as $8 from "./routes/trigger/[name].ts";
 import * as $$0 from "./islands/GridButton.tsx";
 
 const manifest = {
@@ -19,10 +20,11 @@ const manifest = {
         "./routes/device/commands.ts": $1,
         "./routes/device/index.ts": $2,
         "./routes/device/register.ts": $3,
-        "./routes/index.tsx": $4,
-        "./routes/oauth2/callback.ts": $5,
-        "./routes/register.ts": $6,
-        "./routes/trigger/[name].ts": $7,
+        "./routes/icons/temperature.svg.ts": $4,
+        "./routes/index.tsx": $5,
+        "./routes/oauth2/callback.ts": $6,
+        "./routes/register.ts": $7,
+        "./routes/trigger/[name].ts": $8,
     },
     islands: {
         "./islands/GridButton.tsx": $$0,

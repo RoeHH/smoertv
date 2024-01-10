@@ -28,13 +28,12 @@ export const defaultCommands: Command[] = [
     },
     style: {
       icon: "power",
-      height: 2,
       dangerous: true,
     },
   },
   {
     name: "switch",
-    execute: () => {
+    execute: () => {  
       commandController.switchTab();
     },
     style: {
@@ -50,5 +49,16 @@ export const defaultCommands: Command[] = [
     style: {
         icon: "minus",
     }
+  },
+  {
+    name: "toweb",
+    description: "Will switch to the web deployed app to toggle smart lights",
+    execute: () => {
+      
+    },
+    redirect: "https://smoertv.roeh",
+    style: {
+      icon: "bulb",
+    },
   },
 ];

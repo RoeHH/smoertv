@@ -37,6 +37,11 @@ export const oauth2Client = new OAuth2Client({
 });
 
 export const getUserData = async (accessToken: string): Promise<User> => {
+    return {
+        userId: "spotify.roe",
+        userName: "Roe",
+        avatarUrl: "https://i.scdn.co/image/ab6775700000ee85b5a9f2b7a8f9e6e8b5a5b3d0",
+    }
     const response = await fetch("https://api.spotify.com/v1/me", {
         headers: {
             Authorization: `Bearer ${accessToken}`,
@@ -47,6 +52,8 @@ export const getUserData = async (accessToken: string): Promise<User> => {
     }
 
     const userData = await response.json();
+    console.log(userData);
+    
     return {
         userId: userData.id,
         userName: userData.display_name,

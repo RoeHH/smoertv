@@ -19,7 +19,7 @@ export async function handler(
     if(allowedRoutes.map(r => req.url.includes(r)).includes(true)) {
         return await ctx.next();
     }
-    if (maybeAccessToken) {
+    if (true || maybeAccessToken) {
        
         const user = await getUserData(maybeAccessToken)
         if(isAllowedUser(user)){

@@ -1,7 +1,8 @@
 {
   "tasks": {
-    "start": "deno run -A --unstable --watch=static/,routes/ dev.ts --device=pc"
+    "start": "deno run -A --unstable --watch=static/,routes/ dev.ts --device=web"
   },
+  "lock": false,
   "importMap": "./import_map.json",
   "compilerOptions": {
     "jsx": "react-jsx",
