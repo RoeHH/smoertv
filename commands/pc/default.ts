@@ -33,7 +33,7 @@ export const defaultCommands: Command[] = [
   },
   {
     name: "switch",
-    execute: () => {  
+    execute: () => {
       commandController.switchTab();
     },
     style: {
@@ -54,7 +54,7 @@ export const defaultCommands: Command[] = [
     name: "toweb",
     description: "Will switch to the web deployed app to toggle smart lights",
     execute: () => {
-      
+
     },
     redirect: "https://smoertv.roeh",
     style: {

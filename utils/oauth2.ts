@@ -53,7 +53,7 @@ export const getUserData = async (accessToken: string): Promise<User> => {
 
     const userData = await response.json();
     console.log(userData);
-    
+
     return {
         userId: userData.id,
         userName: userData.display_name,

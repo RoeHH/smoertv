@@ -14,7 +14,7 @@ export const handler: Handlers = {
 
 
     const accessToken = (await oauth2Client.code.getToken(req.url)).accessToken;
-  
+
     const headers: Headers = new Headers
     headers.set('location', `http://${new URL(req.url).host}`)
     setCookie(headers, {

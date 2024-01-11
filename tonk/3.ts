@@ -12,14 +12,14 @@ import {
 
 console.log(getMousePos());
 
-//setMousePos(1650, 550); 
+//setMousePos(1650, 550);
 //litebot.mouseClick();
 
-setMousePos(3832, 1023); 
+setMousePos(3832, 1023);
 //litebot.mouseClick();
 
 const tab = 1;
-//setMousePos(150 + 194 * tab, 15); // tab switch reset 
+//setMousePos(150 + 194 * tab, 15); // tab switch reset
 
 /*
 for (let index = 0; index < 10; index++) {

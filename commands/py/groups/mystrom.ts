@@ -4,6 +4,6 @@ export const mystrom: CommandGroup = {
     name: "MyStrom",
     tab: 0,
     commands: [
-        
+
     ],
 };
