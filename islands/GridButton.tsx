@@ -30,15 +30,10 @@ export default function GridButton({name, icon, width, height, host, dangerous, 
 
   const i = secondsLeft > 0 ? `/icons/number-${secondsLeft}.svg` : `/icons/${icon}.svg`
   const c = `px-2 py-1 border(gray-100 2) hover:bg-gray-200 ${width ? `col-span-${width}`: ""} ${height ? `row-span-${height} h-[75px]`: "h-9"}`;
-function gotWeather({ temperature, humidity }) {
-  alert(`temperature: ${temperature}, humidity: ${humidity}`);
-}
+
   return (
     <button
       onClick={() => {
-        if(fetchUrl) {
-          fetch("http://192.168.1.105/report", {method: "GET", mode: "no-cors", headers: {"Access-Control-Allow-Origin": "*", "Origin": "http://192.168.1.105/"}})
-        }
         if(redirect){          
           window.location.assign(redirect);
         }
