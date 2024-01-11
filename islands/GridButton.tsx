@@ -1,3 +1,4 @@
+import { red } from "https://deno.land/std@0.122.0/fmt/colors.ts";
 import { useEffect, useState } from "preact/hooks";
 
 export interface GridButtonProps{
@@ -7,9 +8,11 @@ export interface GridButtonProps{
   height?: number;
   dangerous?: boolean;
   reload?: boolean;
+  redirect?: string;
+  fetchUrl?: string;
 }
 
-export default function GridButton({name, icon, width, height, host, dangerous, reload}: {host:string} & GridButtonProps) {
+export default function GridButton({name, icon, width, height, host, dangerous, reload, redirect, fetchUrl}: {host:string} & GridButtonProps) {
   const [now, setNow] = useState(new Date());
   const [target, setTarget] = useState(new Date());
   useEffect(() => {
@@ -31,6 +34,9 @@ export default function GridButton({name, icon, width, height, host, dangerous, 
   return (
     <button
       onClick={() => {
+        if(redirect){          
+          window.location.assign(redirect);
+        }
         if (dangerous && secondsLeft <= 0) {
             setTarget(new Date(now.getTime() + 3000));
             return;

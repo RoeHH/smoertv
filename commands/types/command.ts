@@ -1,8 +1,9 @@
 export interface Command {
     name: string;
     description?: string;
-    execute: (fullscreen?: boolean, index?: number) => {fullscreen?: boolean, index?: number} | void | Promise<void> | Promise<{fullscreen?: boolean, index?: number}>;
-    state?: number;
+    execute: ({}:any) => any | void | Promise<void> | Promise<any>;
+    fetch?: string;
+    redirect?: string;
     style: {
         icon: string;
         height?: number;
