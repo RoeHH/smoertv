@@ -21,21 +21,21 @@ class CommandController {
 
     public async executeCommand(name: string): Promise<void> {
         console.log(this.index, name);
-        
+
         const ret = await this.getCommands().find((command) => command.name === name)?.execute({fullscreen: this.fullscreen, index: this.index});
         if (ret?.fullscreen !== undefined) {
             this.fullscreen = ret.fullscreen;
         }
         if (ret?.index !== undefined) {
             this.index = ret.index;
-        }        
+        }
     }
 
     public switchGroup(): void {
         this.activeGroup = this.activeGroup + 1 >= this.commandGroups.length ? 0 : this.activeGroup + 1;
     }
 
-    
+
     public switchTab(): void {
         console.log(this.tab + 1,  this.tab + 1 >= this.commandGroups.length);
         console.log(this.tab);
@@ -50,4 +50,3 @@ class CommandController {
 }
 
 export const commandController = new CommandController();
-

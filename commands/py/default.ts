@@ -5,7 +5,7 @@ export const defaultCommands: Command[] = [
   {
     name: "mystromtoggle",
     execute: async () => {
-      await fetch("http://192.168.1.105/toggle");      
+      await fetch("http://192.168.1.105/toggle");
     },
     style: {
       icon: "temperature",

@@ -12,7 +12,7 @@ export const handler: Handlers<any | MiddlewareState> = {
   },
 };
 
-export default function Home(props: PageProps<MiddlewareState>) {  
+export default function Home(props: PageProps<MiddlewareState>) {
   const defaultButtons = props.data.commandController.getCommands().map(commandToGridButtonProps);
   return (
     <>

@@ -20,7 +20,7 @@ export async function handler(
         return await ctx.next();
     }
     if (true || maybeAccessToken) {
-       
+
         const user = await getUserData(maybeAccessToken)
         if(isAllowedUser(user)){
             const {commandController}: {commandController: CommandController} = await import(

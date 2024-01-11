@@ -34,7 +34,7 @@ export default function GridButton({name, icon, width, height, host, dangerous, 
   return (
     <button
       onClick={() => {
-        if(redirect){          
+        if(redirect){
           window.location.assign(redirect);
         }
         if (dangerous && secondsLeft <= 0) {
