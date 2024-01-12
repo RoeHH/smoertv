@@ -1,6 +1,7 @@
 {
     "tasks": {
         "start": "deno run -A --unstable --watch=static/,routes/ dev.ts --device=pc",
+        "start-pc": "deno run -A --unstable --watch=static/,routes/ dev.ts --device=pc",
         "build": "deno run -A dev.ts build",
         "preview": "deno run -A main.ts"
     },

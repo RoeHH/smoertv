@@ -56,7 +56,7 @@ export const defaultCommands: Command[] = [
     execute: () => {
       
     },
-    redirect: "https://smoertv.roeh",
+    redirect: "http://192.168.1.174:2005/",
     style: {
       icon: "bulb",
     },

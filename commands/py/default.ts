@@ -3,7 +3,7 @@ import { commandController } from "commands/pc/commandController.ts";
 
 export const defaultCommands: Command[] = [
   {
-    name: "mystromtoggle",
+    name: "pc",
     execute: async () => {
       await fetch("http://192.168.1.105/toggle");      
     },
